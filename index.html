@@ -50,9 +50,24 @@
   footer.principal a { color:#dbe2f2; }
   .aviso { background:#fff8e1; border:1px solid #f0dfa8; padding:12px 14px; border-radius:6px; font-size:14px; }
   .obrigatorio { color:#a32b1c; }
+  .skip-link{
+    position: absolute;
+    left: -99999px;
+    top: 10px;
+  }
+  .skip-link:focus{
+    left: 10px;
+    background: #ffffff;
+    color: #000000;
+    padding: 10px 16px;
+    z-index: 1000;
+    border: solid  2px #000000;
+  }
 </style>
 </head>
 <body>
+
+  <a href="#conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
 
 <div class="wrap">
 
@@ -86,7 +101,7 @@
 
   <div class="miolo">
 
-    <main>
+    <main id="conteudo-principal" tabindex="-1">
 
       <h1>Loja de Instrumentos</h1>
 

@@ -46,11 +46,48 @@
 
       <h1>Loja de Instrumentos</h1>
 
+      <!-- Banner -->
+      <section class="banner" aria-labelledby="titulo-banner">
+
+        <h2 id="titulo-banner">Semana da Música</h2>
+
+        <p>Confira nossas ofertas especiais</p>
+
+      </section>
+      <!-- Fim do Banner -->
+
       <p>
         Bem-vindo à nossa loja. Trabalhamos com <strong>as melhores marcas</strong> do mercado e oferecemos
         <em>garantia estendida</em> em todos os produtos. Nossa nova <ins>política de trocas</ins> entrou em
         vigor neste mês. <a href="politica.html">Leia a política de trocas completa</a>.
       </p>
+
+      <section class="carrossel" aria-labelledby="titulo-carrossel">
+
+        <h2 id="titulo-carrossel">Destaques da loja</h2>
+
+        <div class="slide ativo" aria-hidden="false">
+          <img src="assets/img/guitara.jpg" alt="Guitarra elétrica">
+          <h3 class="titulo-slide">Guitarras elétricas</h3>
+          <p class="descricao-slide">Confira nosssos modelos</p>
+        </div>
+
+        <div class="slide" aria-hidden="true">
+          <img src="assets/img/bateria.jpg" alt="Bateria músical">
+          <h3 class="titulo-slide">Baterias</h3>
+          <p class="descricao-slide">Cofira nossas baterias</p>
+        </div>
+
+        <div class="slide" aria-hidden="true">
+          <img src="assets/img/piano.jpg" alt="Piano de cauda">
+          <h3 class="titulo-slide">Pianos</h3>
+          <p class="descricao-slide">Confira nossa linha de pianos acústicos</p>
+        </div>
+
+        <button type="button" id="btn-carrossel-proximo" class="btn-primario">Próximo destaque</button>
+
+      </section>
+
 
       <h2>Guitarras</h2>
 
@@ -66,6 +103,7 @@
 
       <ul class="lista-produtos">
         <li class="cartao">
+            <img src="https://placehold.co/600x400" alt="">
           <h4>Stratocaster HSS</h4>
           <span class="preco">R$ 4.290,00</span>
           <button type="button" class="acao" onclick="adicionarCarrinho(101)">
@@ -73,6 +111,7 @@
           </button>
         </li>
         <li class="cartao">
+           <img src="https://placehold.co/600x400" alt="">
           <h4>Les Paul Standard</h4>
           <span class="preco">R$ 7.150,00</span>
           <button type="button" class="acao" onclick="adicionarCarrinho(102)">
@@ -237,6 +276,6 @@
   </footer>
 
 </div>
-
+<script src="assets/js/javascript.js"></script>
 </body>
 </html>
